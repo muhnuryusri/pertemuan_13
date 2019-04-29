@@ -1,0 +1,45 @@
+Linked List
+Linked List atau dikenal juga dengan sebutan senarai berantai adalah struktur data yang terdiri dari urutan record data dimana setiap record memiliki field yang menyimpan alamat/referensi dari record selanjutnya (dalam urutan). Elemen data yang dihubungkan dengan link pada Linked List disebut Node. Biasanya didalam suatu linked list, terdapat istilah head dan tail. 
+•	Head adalah elemen yang berada pada posisi pertama dalam suatu linked list
+•	Tail adalah elemen yang berada pada posisi terakhir dalam suatu linked list
+
+Ada beberapa macam Linked List, yaitu :
+1.	Single Linked List
+2.	Double Linked List
+3.	Circular Linked List
+4.	Multiple Linked List
+
+Single Linked List
+Single Linked List merupakan suatu linked list yang hanya memiliki satu variabel pointer saja. Dimana pointer tersebut menunjuk ke node selanjutnya. Biasanya field pada tail menunjuk ke NULL.
+contoh :
+ 
+
+contoh codingannya :
+
+struct Mahasiswa{
+      char nama[25];
+      int usia;
+      struct Mahasiswa *next;
+}*head,*tail;
+
+
+Double Linked List
+Double Linked List merupakan suatu linked list yang memiliki dua variabel pointer yaitu pointer yang menunjuk ke node selanjutnya dan pointer yang menunjuk ke node sebelumnya. Setiap head dan tailnya juga menunjuk ke NULL.
+
+contoh :
+ 
+
+contoh codingannya :
+
+struct Mahasiwa{
+     char nama[25];
+     int usia;
+     struct Mahasiswa *next,*prev;
+}*head,*tail;
+
+Circular Linked List
+Circular Linked List merupakan suatu linked list dimana tail (node terakhir) menunjuk ke head (node pertama). Jadi tidak ada pointer yang menunjuk NULL. Ada 2 jenis Circular Linked List, yaitu :
+•	Circular Single Linked List
+ 
+
+• Circular Double Linked List
